@@ -1,0 +1,13 @@
+<!--Navigation-->
+<div>
+  <app-auth-navigation [hidden]="authNavBar"></app-auth-navigation>
+  <app-user-navigation [hidden]="userNavBar"></app-user-navigation>
+  <app-admin-navigation [hidden]="adminNavBar"></app-admin-navigation>
+</div>
+
+<!-- Body -->
+<div class="container p-4">
+  <router-outlet></router-outlet>
+</div>
+
+

@@ -1,0 +1,28 @@
+<div class="row">
+        <div class="col-md-4" *ngFor = "let user of data">
+           <div class="card" style="margin-top:20px;">
+            <div class="card-header bg-dar text-while d-flex justify-content-bettwen align-items-center">
+                <h3> {{user.name}} {{user.last_name}}</h3>
+                <hr>
+            </div>
+            <div class="card-body">
+                <b>Last Name:</b>  <label for="">{{user.last_name}}</label><br>
+                <b>Email: </b>  <label for="">{{user.email}}</label><br>
+                <b>Phone: </b> <label for="">{{user.phone}}</label>
+
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                  <div class="col-md-6" style="margin-top:10px;">
+                    <!-- <a [routerLink]="['/comics', user.id]" class="btn btn-info btn-block">
+                      DELETE
+                    </a> -->
+                    <button type="submit" class="btn btn-primary btn-block" (click)="deleteUser(user.id)">
+                        DELETE
+                    </button>
+                  </div>           
+              </div>
+            </div> 
+          </div>
+        </div>     
+      </div>

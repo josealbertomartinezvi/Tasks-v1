@@ -1,0 +1,118 @@
+
+<div class="row">
+        <div>
+                <div class="col-md-12 mx-auto">
+                    <div class="card">
+                        <div class="card-header" style="text-align: center">
+                            <img src="../../../../assets/icon-people.png" alt="" height="100" width="100">
+                            <br>
+                            My Data (User)
+                        </div>
+                        <div class="card-body">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6 mx-auto">
+                                        <div class="form-group">
+                                            <label for="">Document Id</label>
+                                            <input disabled type="text" class="form-control" name="document_id" [(ngModel)]="data.document_id" placeholder="Document Id">
+                                        </div>                     
+                                        <div class="form-group">
+                                            <label for="">Name</label>
+                                            <input disabled type="text" class="form-control" name="name" [(ngModel)]="data.name" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Last Name</label>
+                                            <input disabled type="text" class="form-control" name="last_name" [(ngModel)]="data.last_name" placeholder="Last Name">
+                                        </div>      
+                                        <div class="form-group">
+                                            <label for="">Age</label>
+                                            <input disabled type="text" class="form-control" name="age" [(ngModel)]="data.age" placeholder="Age">
+                                        </div>                                                         
+                                        <div class="form-group">
+                                            <label for="">Email</label>
+                                            <input disabled type="email" class="form-control" name="email" [(ngModel)]="data.email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mx-auto">
+                                        <div class="form-group">
+                                            <label for="">Phone</label>
+                                            <input disabled type="text" class="form-control" name="phone" [(ngModel)]="data.phone" placeholder="Phone">
+                                        </div>                      
+                                        <div class="form-group">
+                                            <label for="">Address</label>
+                                            <input disabled type="text" class="form-control" name="address" [(ngModel)]="data.address" placeholder="Address">
+                                        </div>                 
+                                        <div class="form-group">
+                                                <label for="">City</label>
+                                            <input disabled type="text" class="form-control" name="city"  placeholder="City" value="{{data.city}}">
+                                        </div>                           
+                                        <div class="form-group">
+                                            <label for="">Password</label>
+                                            <input disabled type="password" class="form-control" name="password" [(ngModel)]="data.password" placeholder="Password">
+                                        </div>
+                                    </div>                
+                                </div>                                                   
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div>
+                    <div class="col-md-12 mx-auto">
+                        <div class="card">
+                            <div class="card-header" style="text-align: center">
+                                <img src="../../../../assets/icon-people.png" alt="" height="100" width="100">
+                                <br>
+                                My Data Updated (User)
+                            </div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-6 mx-auto">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="document_id_updated" [(ngModel)]="updatedData.document_id" placeholder="Document Id">
+                                            </div>                     
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="name" [(ngModel)]="updatedData.name" placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="last_name_updated" [(ngModel)]="updatedData.last_name" placeholder="Last Name">
+                                            </div>      
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="age_updated" [(ngModel)]="updatedData.age" placeholder="Age">
+                                            </div>                                                         
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="email_updated" [(ngModel)]="updatedData.email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mx-auto">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="phone_updated" [(ngModel)]="updatedData.phone" placeholder="Phone">
+                                            </div>                      
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="address_updated" [(ngModel)]="updatedData.address" placeholder="Address">
+                                            </div>                 
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="city_updated" [(ngModel)]="updatedData.city" placeholder="City">
+                                            </div>                           
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" name="password_updated" [(ngModel)]="updatedData.password" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-block" (click)="updateUser()">
+                                                    UPDATE
+                                                </button>
+                                            </div>
+                                        </div>                
+                                    </div>                                                   
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                   
+
+</div>
+
+        
+
