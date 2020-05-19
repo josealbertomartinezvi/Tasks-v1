@@ -15,9 +15,9 @@ class AuthController extends Controller	{
     public $successStatus = 200;
 
 
-    public function register(SaveUserRequest $request){
-
-        $user = User::create( $request -> validated() );
+    public function register(Request $request){
+        // return $request;
+        $user = User::create( $request->all() );
 
         if($user){
             return response()->json([
